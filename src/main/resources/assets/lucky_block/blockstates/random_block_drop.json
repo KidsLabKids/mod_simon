@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lucky_block:block/random_block_drop"
+    }
+  }
+}

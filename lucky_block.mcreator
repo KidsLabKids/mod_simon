@@ -38,13 +38,63 @@
           }
         ]
       }
+    },
+    {
+      "name": "Piggy",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "piggy"
+    },
+    {
+      "name": "Salz",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salz"
+    },
+    {
+      "name": "SalzWennEinBlockPlatziertWurdeVon",
+      "type": "procedure",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "salz_wenn_ein_block_platziert_wurde_von",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "block.lucky_block.random_block_drop": "Random Block Drop"
+      "block.lucky_block.random_block_drop": "Random Block Drop",
+      "block.lucky_block.salz": "Salz",
+      "item.lucky_block.piggy_spawn_egg": "Piggy Spawn Egg",
+      "entity.lucky_block.piggy": "Piggy"
     }
   },
   "foldersRoot": {

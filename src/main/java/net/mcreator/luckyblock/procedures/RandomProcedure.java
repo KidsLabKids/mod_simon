@@ -4,11 +4,7 @@ import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.nbt.CompoundNBT;
-import net.minecraft.entity.projectile.FireballEntity;
-import net.minecraft.entity.passive.BeeEntity;
-import net.minecraft.entity.passive.BatEntity;
-import net.minecraft.entity.monster.CreeperEntity;
-import net.minecraft.entity.item.minecart.MinecartEntity;
+import net.minecraft.entity.passive.CatEntity;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
@@ -50,40 +46,7 @@ public class RandomProcedure {
 		Random = (double) Math.random();
 		if ((Random < 0.5)) {
 			if (world instanceof ServerWorld) {
-				Entity entityToSpawn = new BatEntity(EntityType.BAT, (World) world);
-				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
-							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-				world.addEntity(entityToSpawn);
-			}
-			if (world instanceof ServerWorld) {
-				Entity entityToSpawn = new BeeEntity(EntityType.BEE, (World) world);
-				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
-							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-				world.addEntity(entityToSpawn);
-			}
-			if (world instanceof ServerWorld) {
-				Entity entityToSpawn = new CreeperEntity(EntityType.CREEPER, (World) world);
-				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
-							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-				world.addEntity(entityToSpawn);
-			}
-		} else if (true) {
-			if (world instanceof ServerWorld) {
-				Entity entityToSpawn = new FireballEntity(EntityType.FIREBALL, (World) world);
-				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
-				if (entityToSpawn instanceof MobEntity)
-					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),
-							SpawnReason.MOB_SUMMONED, (ILivingEntityData) null, (CompoundNBT) null);
-				world.addEntity(entityToSpawn);
-			}
-			if (world instanceof ServerWorld) {
-				Entity entityToSpawn = new MinecartEntity(EntityType.MINECART, (World) world);
+				Entity entityToSpawn = new CatEntity(EntityType.CAT, (World) world);
 				entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof MobEntity)
 					((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),

@@ -1,3 +1,6 @@
 {
-  "block.lucky_block.random_block_drop": "Random Block Drop"
+  "block.lucky_block.random_block_drop": "Random Block Drop",
+  "block.lucky_block.salz": "Salz",
+  "item.lucky_block.piggy_spawn_egg": "Piggy Spawn Egg",
+  "entity.lucky_block.piggy": "Piggy"
 }
